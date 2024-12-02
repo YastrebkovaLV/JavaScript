@@ -1,10 +1,8 @@
-// Деление яблок
-let apples = 10;
-let people = 3;
-let Person = Math.floor(apples / people);
-let Apple = apples % people;
+// Количество парт
 
-console.log(`Яблок : ${apples}`);
-console.log(` Человек : ${people}`);
-console.log(` Каждый человек получит : ${Person}`);
-console.log(` Остается : ${Apple}`);
+let classes = 13;
+let student = 7;
+
+let classStudent = classes * student;
+let parta = Math.ceil(classStudent / 1.75);
+console.log("Нужно парт : " + parta)
