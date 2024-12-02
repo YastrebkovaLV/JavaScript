@@ -1,8 +1,10 @@
-// Площадь круга
+// Деление яблок
+let apples = 10;
+let people = 3;
+let Person = Math.floor(apples / people);
+let Apple = apples % people;
 
-const radius = 10;
-const ar = Math.PI * Math.pow(radius, 2);
-const area = ar.toFixed(2);
-
-console.log(`Площадь : ${area}`);
-console.log(`Радиус : ${radius}`);
+console.log(`Яблок : ${apples}`);
+console.log(` Человек : ${people}`);
+console.log(` Каждый человек получит : ${Person}`);
+console.log(` Остается : ${Apple}`);
