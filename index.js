@@ -1,5 +1,1 @@
-// Площадь квадрата
-
-const a = 4;
-const square = a * a;
-console.log(`Площадь квадрата : ${square}`);
+console.log('Эта строчка была написана в WebStorm!!!');
