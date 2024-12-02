@@ -1,12 +1,11 @@
-// Поиск вхождения слова
+// Начало строки
 
-const milk = " Молоко ";
-const y = milk.includes("у");
-const m = milk.includes("м");
+const slova = ["привет","ветеринар"];
+const vet = "вет";
 
-if (y || m) {
-    console.log('Слово содержит букву "у" или букву "м".');
-
+slova.forEach(slova => {if (slova.startsWith(vet)){
+    console.log(`${slova} начинается с "${vet}"`);
 } else {
-    console.log(`Слово не содержит букву "у" или букву "м".`);
+    console.log(`${slova} не начинается с "${vet}"`);
 }
+});
