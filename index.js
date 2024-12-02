@@ -1,9 +1,11 @@
-// Первый и последний символ строки
+// Позиция первой и последней буквы "О"
 
-const textExample = "example";
+const Moloko = "молоко";
+const Pozision1 = Moloko.indexOf("о");
+const LastPozision = Moloko.lastIndexOf("о");
 
-const firstChar = textExample[0].toUpperCase()
-const lastChar = textExample[textExample.length - 1].toUpperCase()
-const middlePart = textExample.substring(1, textExample.length - 1);
+const MolokoPozision1 = (`Первая позиция : ${Pozision1} `);
+const LastMolokoPozision = (`Последняя позиция : ${LastPozision} `);
 
-console.log(`${firstChar}${middlePart}${lastChar}`);
+console.log(MolokoPozision1);
+console.log(LastMolokoPozision);
