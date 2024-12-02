@@ -1,5 +1,7 @@
-// Площадь квадрата
+// Площадь прямоугольника
 
-const a = 4;
-const square = a * a;
-console.log(`Площадь квадрата : ${square}`);
+const b = 5;
+const c = 20;
+const squarePr = b * c ;
+
+console.log(`Площадь прямоугольника: ${squarePr}`);
