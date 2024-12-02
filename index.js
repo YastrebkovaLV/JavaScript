@@ -1,7 +1,8 @@
-// Площадь прямоугольника
+// Площадь круга
 
-const b = 5;
-const c = 20;
-const squarePr = b * c ;
+const radius = 10;
+const ar = Math.PI * Math.pow(radius, 2);
+const area = ar.toFixed(2);
 
-console.log(`Площадь прямоугольника: ${squarePr}`);
+console.log(`Площадь : ${area}`);
+console.log(`Радиус : ${radius}`);
