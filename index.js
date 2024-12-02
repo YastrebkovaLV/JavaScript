@@ -1,6 +1,5 @@
-// Вставка значения в строку
+// Площадь квадрата
 
-const name = "Ruslan";
-const message = `Добро пожаловать , ${name} , благодарим за регистрацию ! `;
-console.log(message);
-console.log("Надеемся, Вам понравится");
+const a = 4;
+const square = a * a;
+console.log(`Площадь квадрата : ${square}`);
