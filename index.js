@@ -1,7 +1,8 @@
-// Длина строки
+// Первый и последний символ строки
 
-let text = "Я программист";
-let TextLength = text.length;
-console.log(TextLength);
+const textExample = "example";
 
+const firstChar = textExample[0].toUpperCase()
+const lastChar = textExample[textExample.length - 1].toUpperCase()
+const middlePart = textExample.substring(1, textExample.length - 1);
 
