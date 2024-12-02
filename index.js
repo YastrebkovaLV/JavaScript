@@ -1,11 +1,7 @@
-// Начало строки
+// Конец строки
 
-const slova = ["привет","ветеринар"];
-const vet = "вет";
+const slova2 = ['дятел','телефон'];
+const tel = "тел";
 
-slova.forEach(slova => {if (slova.startsWith(vet)){
-    console.log(`${slova} начинается с "${vet}"`);
-} else {
-    console.log(`${slova} не начинается с "${vet}"`);
-}
-});
+slova2.forEach(slova2 => {const endsWithtel = slova2.endsWith(tel);
+    console.log (`Слово "${slova2}" заканчивается на "${tel}": ${endsWithtel}`);})
