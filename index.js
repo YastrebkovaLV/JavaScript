@@ -1,8 +1,11 @@
-// Количество парт
+const number = 5;
 
-let classes = 13;
-let student = 7;
-
-let classStudent = classes * student;
-let parta = Math.ceil(classStudent / 1.75);
-console.log("Нужно парт : " + parta)
+if (number > 0) {
+    console.log(" Число положительное ");
+}
+else if (number < 0) {
+    console.log(" Число отрицательное ");
+}
+else {
+    console.log(" Число 0");
+}
