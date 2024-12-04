@@ -1,23 +1,23 @@
-// Определние роли (1 задание, switch)
+// Sponge Bob (2 задание, switch)
 
-const role = "superadmin";
+const bob = "patrick";
 
-let level;
-
-switch (role) {
-    case 'user':
-    case 'client':
-        level = 1;
+switch(bob.toLowerCase()) {
+    case "spongebob":
+        console.log("| ( · ) ( · ) | ");
         break;
-    case 'admin':
-    case 'manager':
-        level = 2;
+    case "patrick":
+        console.log("/ ( · ) ( · ) \\ ");
         break;
-    case 'superadmin':
-        level = 3;
+    case "squidward" :
+        console.log("( ( · ) ( · ) )");
+        break;
+    case "plankton" :
+        console.log("| ( · ) |");
+        break;
+    case "mr.crabs":
+        console.log("| · | | · |");
         break;
         default:
-            level = 0;
+            console.log(" Персонажа нет ");
 }
-
-console.log(` Уровень вашей роли : ${level} (${role})`);
