@@ -1,24 +1,22 @@
-// Одна строка (4 задание,условия)
+// Две строки (5 задание,условия)
 
-const stroka = "Я изучаю джаваскрипт !";
+const stroka1 = " я не знаю,что писать ";
+const stroka2 = " у меня кончились идеи ";
 
-// Первый символ ,если длина строки четная
+// Совпадение первых символов
 
-if (stroka.length % 2 === 0) {
-    console.log(stroka[0]);
-    console.log(" Первый символ,длина четная ");
+if (stroka1.charAt(0) === stroka2.charAt(0)) {
+    console.log("Первые символы совпадают");
 }
-
-// Предпоследний символ, если длина строки нечетная и строка оканчивается на букву "а"
-
-else if (stroka.length % 2 !== 0 && stroka[stroka.length - 1] === 'а') {
-    console.log(stroka[stroka.length - 2]);
-    console.log(" Предпоследний символ,ваша строка заканчивается на 'а' либо нечетная ");
-}
-
-// Последний символ, если длина строки нечетная
-
 else {
-    console.log(stroka[stroka.length - 1]);
-    console.log(" Длина нечетная ")
+    console.log(" Не совпадают ");
+}
+
+// Совпадения последних символов
+
+if (stroka1.charAt(stroka1.length - 1) === stroka2.charAt(stroka1.length - 1)) {
+    console.log("Последние символы совпадают ");
+}
+else {
+    console.log("Не совпадают");
 }
