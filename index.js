@@ -1,16 +1,23 @@
-// FizzBuzz (7 задание, условия)
+// Определние роли (1 задание, switch)
 
-const number = 666;
+const role = "superadmin";
 
-if (number % 3 === 0 && number % 5 === 0) {
-    console.log("FizzBuzz");
+let level;
+
+switch (role) {
+    case 'user':
+    case 'client':
+        level = 1;
+        break;
+    case 'admin':
+    case 'manager':
+        level = 2;
+        break;
+    case 'superadmin':
+        level = 3;
+        break;
+        default:
+            level = 0;
 }
-else if (number % 3 === 0) {
-    console.log("Fizz");
-}
-else if (number % 5 === 0) {
-    console.log("Buzz");
-}
-else {
-    console.log(number);
-}
+
+console.log(` Уровень вашей роли : ${level} (${role})`);
