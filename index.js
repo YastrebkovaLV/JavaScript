@@ -1,11 +1,5 @@
-const number = 5;
+// Площадь квадрата
 
-if (number > 0) {
-    console.log(" Число положительное ");
-}
-else if (number < 0) {
-    console.log(" Число отрицательное ");
-}
-else {
-    console.log(" Число 0");
-}
+const a = 4;
+const square = a * a;
+console.log(`Площадь квадрата : ${square}`);
