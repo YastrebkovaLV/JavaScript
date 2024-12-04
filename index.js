@@ -1,32 +1,23 @@
-// Маппер (3 задание, switch)
+//Базовые операции (1 задания, обьекты)
 
-let myStatus = "notaccepted";
+let obj = {
+    name: "Lilia",
+    age: 5
+};
 
-switch (myStatus) {
-    case "approved":
-        myStatus = "approved";
-        break;
-    case "pending":
-        myStatus = "pending";
-        break;
-    case "moderation":
-        myStatus = "pending";
-        break;
-    case "waiting":
-        myStatus = "pending";
-        break;
-    case "declined":
-        myStatus = "declined";
-        break;
-    case "rejected":
-        myStatus = "declined";
-        break;
-    case "notaccepted" :
-        myStatus = "declined";
-        break;
-        default:
-            myStatus = "pending";
+obj.zodiac = "cancer";
 
-}
+obj["favorite color"] = "orange";
 
-console.log(`Внешний статус : ${myStatus}`);
+delete obj["favorite color"];
+delete obj.zodiac;
+
+obj.dateOfBirth = {
+    month: "July",
+    year: 2006
+};
+
+obj.dateOfBirth.country = "Russia";
+obj.dateOfBirth.city = "Moscow";
+
+console.log(obj);
