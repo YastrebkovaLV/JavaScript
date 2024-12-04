@@ -1,23 +1,32 @@
-// Sponge Bob (2 задание, switch)
+// Маппер (3 задание, switch)
 
-const bob = "patrick";
+let myStatus = "notaccepted";
 
-switch(bob.toLowerCase()) {
-    case "spongebob":
-        console.log("| ( · ) ( · ) | ");
+switch (myStatus) {
+    case "approved":
+        myStatus = "approved";
         break;
-    case "patrick":
-        console.log("/ ( · ) ( · ) \\ ");
+    case "pending":
+        myStatus = "pending";
         break;
-    case "squidward" :
-        console.log("( ( · ) ( · ) )");
+    case "moderation":
+        myStatus = "pending";
         break;
-    case "plankton" :
-        console.log("| ( · ) |");
+    case "waiting":
+        myStatus = "pending";
         break;
-    case "mr.crabs":
-        console.log("| · | | · |");
+    case "declined":
+        myStatus = "declined";
+        break;
+    case "rejected":
+        myStatus = "declined";
+        break;
+    case "notaccepted" :
+        myStatus = "declined";
         break;
         default:
-            console.log(" Персонажа нет ");
+            myStatus = "pending";
+
 }
+
+console.log(`Внешний статус : ${myStatus}`);
