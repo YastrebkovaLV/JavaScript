@@ -1,22 +1,37 @@
-// Две строки (5 задание,условия)
+// Вложенные условия (6 задание, условия)
 
-const stroka1 = " я не знаю,что писать ";
-const stroka2 = " у меня кончились идеи ";
+const number = -0.0055;
 
-// Совпадение первых символов
+if (number === 0) {
+    console.log("A");
+}
+else if (number > 1) {
+    if (number % 2 === 0) {
+        console.log("B");
+    }
+    else {
+        console.log("C");
+    }
+}
 
-if (stroka1.charAt(0) === stroka2.charAt(0)) {
-    console.log("Первые символы совпадают");
+else if (number < -1) {
+    if (number % 2 === 0) {
+        console.log("D");
+    }
+    else {
+        console.log("E");
+    }
 }
 else {
-    console.log(" Не совпадают ");
-}
+    const lastNumber = Math.abs(number).toString().slice(-1);
+    if (lastNumber === '5') {
+        console.log("F");
+    }
 
-// Совпадения последних символов
-
-if (stroka1.charAt(stroka1.length - 1) === stroka2.charAt(stroka1.length - 1)) {
-    console.log("Последние символы совпадают ");
-}
-else {
-    console.log("Не совпадают");
+    else if (lastNumber % 2 === 0) {
+        console.log("G");
+    }
+    else {
+        console.log("H");
+    }
 }
