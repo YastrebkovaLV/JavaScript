@@ -1,23 +1,48 @@
-//Базовые операции (1 задания, обьекты)
+// Базовые операции (1 задание, массивы)
 
-let obj = {
-    name: "Lilia",
-    age: 5
-};
+const arr = [10,11,33,-1,22,3,-4]; // мой массив
 
-obj.zodiac = "cancer";
+console.log(arr[0]); // первое значение
 
-obj["favorite color"] = "orange";
+console.log(arr[arr.length-1]); // последнее значение
 
-delete obj["favorite color"];
-delete obj.zodiac;
+const size = arr.length; // размер
 
-obj.dateOfBirth = {
-    month: "July",
-    year: 2006
-};
+arr.push(400); //новые значения в конце  массива
 
-obj.dateOfBirth.country = "Russia";
-obj.dateOfBirth.city = "Moscow";
+console,log(arr[arr.length-1]); // последнее значение
 
-console.log(obj);
+arr.shift(); // удалить первое значение
+
+console.log(arr[0]); // первое значение
+
+arr[arr.length-1] = 200; //перезапись на новое значение
+
+arr.push(200); // новое зачение в конце массива
+
+let index = Math.floor(arr.length / 2); // Индекс
+console.log(arr[index]);
+
+arr[0] = "Я не знаю";       // Перезапись на новое значение
+arr[arr.length-1] = "Я не знаю";
+arr[index] = "Я не знаю";
+
+console.log(arr.indexOf("Я не знаю")); // Первый и последний индекс
+console.log(arr.lastIndexOf("Я не знаю"));
+
+console.log(arr.includes(1)); // есть ли один в массиве
+
+console.log(arr.length); // длина
+
+console.log(arr.length - size); // разница в размере
+
+let obj = { name: 'Lilia',nick: []}; // это обьект
+
+arr.push(obj); // обьект в массиве
+
+arr[arr.length-1].nick = []; // новое поле с пустым массивом
+
+arr[arr.length-1].nick.push('nick1');
+arr[arr.length-1].nick.push('nick2'); // новое значение
+
+console.log(arr); // вывод массива
