@@ -1,17 +1,11 @@
-// Кости (2 задание, while)
+// Случайность (1 задание , while)
 
-let number = 10;
-let trow1;
-let trow2;
+let a = 1;
+let randomNumber = Math.random();
 
-while(true) {
-    throw1 = Math.floor(Math.random()* 6) + 1;
-    throw2 = Math.floor(Math.random() * 6) + 1;
-    number++;
-
-    if (trow2 = throw1) {
-        break;
-    }
+while (randomNumber <= 0.95 ) {
+    a++;
+    randomNumber = Math.random();
 }
 
-console.log(`Количество попыток : ${number}`);
+console.log(`количество попыток: ${a}`);
