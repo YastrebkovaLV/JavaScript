@@ -1,5 +1,15 @@
-// Угол (10 задание , цикл for )
+// Ромб (11 задание , цикл for )
 
-for(let i =9; i > 0; i--) {
-    console.log('*'.repeat(i));
+let a = 9;
+
+for (let i = 1; i <= a; ++i) {
+    let probel = ''.repeat(a-i);
+    let star = '*'.repeat(i);
+    console.log(probel + star);
+}
+
+for (let i = a-1; i >= 1; --i) {
+    let probel = ''.repeat(a-i);
+    let star = '*'.repeat(i);
+    console.log(probel + star);
 }
