@@ -1,15 +1,9 @@
-// Ромб (11 задание , цикл for )
+// Ёлочка (12 задание , цикл for )
 
-let a = 9;
+let a = 5;
 
-for (let i = 1; i <= a; ++i) {
-    let probel = ''.repeat(a-i);
-    let star = '*'.repeat(i);
-    console.log(probel + star);
-}
-
-for (let i = a-1; i >= 1; --i) {
-    let probel = ''.repeat(a-i);
-    let star = '*'.repeat(i);
-    console.log(probel + star);
+for (let i = 0; i < a; ++i) {
+    let star = '*'.repeat(2*i + 1);
+    let probel = ' '.repeat(a - i - 1);
+    console.log(star+probel);
 }
