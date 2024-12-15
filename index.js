@@ -1,19 +1,21 @@
-// Вывод матрицы (13 задание , цикл for )
+// Мин,макс,среднее (1 задание , цикл for of)
 
- const a = [
-    ['Id', 'Title', 'Description'],
-    [1, 'Title-1', 'Description-1'],
-    [2, 'Title-2', 'Description-2'],
-    [3, 'Title-3', 'Description-3', 'Поле с багом'],
-    [4, 'Title-4', 'Description-4'],
-    [5, 'Title-5', 'Description-5'],
-    [6, 'Title-6', 'Description-6', 'Поле с багом'],
-];
+const a = [122121, 7, 333, 5, 1];
+let min, max, sum = 0 , b = 0;
 
-for (let i = 0; i < a.length; i++) {
-    let b = '';
-    for (let u = 0; u < a[i].length; u++) {
-        b += a[i][u] + '\t';
+for (const number of a) {
+    if (min === undefined || a < min) {
+        min = number;
     }
-    console.log(b.trim());
+    if (max === undefined || number > max) {
+        max = number;
+    }
+    sum += number;
+    b++;
 }
+
+const average = sum / b;
+
+console.log('Минимальное:', min);
+console.log('Максимальное:', max);
+console.log('Среднее:', average);
