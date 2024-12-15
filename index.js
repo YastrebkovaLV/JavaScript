@@ -1,44 +1,36 @@
-// Вывод чисел (1 задание , цикл for )
+// Операция над числами (2 задание , цикл for )
 
-// от 0 до 100
-
-for (let i = 0; i <= 100; i++) {
-    console.log(i);
+// Сумма всех чисел от 0 до 10
+let sum = 0;
+for (let i = 0; i < 10; i++) {
+    sum += i;
 }
+console.log(sum); // 45
 
-// от -100 до 0
+// Сумма всех чисел от 0 до 100, которые нацело делятся на 3 или на 5
 
-for (let i = -100 ; i <= 0; i++) {
-    console.log(i);
-}
-
-// от 100 до 0
-
-for (let i = 100 ; i >= 0; i--) {
-    console.log(i);
-}
-
-// Четные числа
-
-for (let i = 0 ; i <= 100; i+= 2) {
-    console.log(i);
-}
-
-// Вывод чисел 0 и 100, делятся на 3 или на 5
-
-for (let i = 0; i <+ 100; i++) {
+let sum1 = 0;
+for (let i = 0; i < 100; i++) {
     if (i % 3 === 0 || i % 5 === 0) {
-        console.log(i);
+        sum1 += i;
     }
 }
+console.log(sum1); // 2318
 
-// Вывод между 0 и 1000, сумма первой и последней цифры равна 10
+// Сумма квадратов всех положительных чисел от -10 до 10
 
-for (let i = 0; i <= 1000; i++) {
-    let num = i.toString();
-    let first = Number(num[0]);
-    let last = Number(num[num.length - 1]);
-    if (first + last === 10) {
-        console.log(i);
+let sum2 = 0;
+for (let i = -10; i < 10; i++) {
+    if (i > 0) {
+        sum2 += i * i;
     }
 }
+console.log(sum2); // 285
+
+// Произведение всех отрицательных чисел от -10 до 10
+
+let a = 1;
+for (let i = -1; i > -10; i--) {
+    a *= i;
+}
+console.log(a); // -362880
