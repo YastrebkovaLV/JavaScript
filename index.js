@@ -1,8 +1,8 @@
-// Вывести первую половину (7 задание , цикл for )
+// Вывести вторую половину (8 задание , цикл for )
 
-let a = ["aaaaaaaa", "aaaaaaaaa", "aaaaaaaaa", "aaaaaaaa", "aaaaaaaaaaaa"];
-let length = Math.floor(a.length/2);
+let a = ["bbb","bbbbbb","bbbbb","bbbbbb","bbbbb","bbbbbbbb","bbbbbbb","bbbb"];
+let index = Math.floor(a.length/2);
 
-for (let i = 0; i < length; i++) {
+for (let i = index ; i < a.length; i++) {
     console.log(a[i]);
 }
