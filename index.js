@@ -1,21 +1,16 @@
-// Мин,макс,среднее (1 задание , цикл for of)
+// Гласные буквы (2 задание , цикл for of)
 
-const a = [122121, 7, 333, 5, 1];
-let min, max, sum = 0 , b = 0;
+let slovo = "хрюхрю_хахаахахахха";
+const abc = ['а', 'у', 'о', 'ы', 'и', 'э', 'я', 'ю', 'ё', 'е'];
+let a = 0;
+let b = 0;
 
-for (const number of a) {
-    if (min === undefined || a < min) {
-        min = number;
+for (const char of slovo) {
+    if (abc.includes(char.toLowerCase())) {
+        a++;
+    } else if (char.match(/[а-яё]/i)) {
+        b++;
     }
-    if (max === undefined || number > max) {
-        max = number;
-    }
-    sum += number;
-    b++;
 }
 
-const average = sum / b;
-
-console.log('Минимальное:', min);
-console.log('Максимальное:', max);
-console.log('Среднее:', average);
+console.log(`Гласные: ${a}, Негласные: ${b}`);
