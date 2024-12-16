@@ -1,15 +1,7 @@
-// Ключи с четной длиной (1 задание , цикл for in)
+// Вывод пар ключ-значение (2 задание , цикл for in)
 
-const obj = {
-    age : 18,
-    name : "Lilia",
-    languageProg: "JavaScript",
-    email: "lilia@gmail.com",
-    password: "123455"
-};
+const person = {age:10 ,name:' ', child: 'Max'};
 
-for (let key in obj) {
-    if (key.length % 2 === 0) {
-        console.log(key);
-    }
+for (let key in person) {
+    console.log(`${key}: ${person[key]}`);
 }
