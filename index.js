@@ -1,12 +1,13 @@
-// Вывод ключей через запятую (4 задание , цикл for in)
+// Ключи и значения (5 задание , цикл for in)
 
-const person = {age: 10, name: "", child: null};
-let keys = '';
+const obj = { a: 1, b: 2, c: 3 };
+const keys = [];
+const values = [];
 
-for (let key in person) {
-    keys += key + ',';
+for (const [key,value] of Object.entries(obj)) {
+    keys.push(key);
+    values.push(value);
 }
 
-keys = keys.slice(0,-2);
-
+console.log(values);
 console.log(keys);
