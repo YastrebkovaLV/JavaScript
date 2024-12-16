@@ -1,11 +1,15 @@
-// Строка в массив (6 задание , цикл for of)
+// Ключи с четной длиной (1 задание , цикл for in)
 
-const word = "a car";
-const arr = [];
+const obj = {
+    age : 18,
+    name : "Lilia",
+    languageProg: "JavaScript",
+    email: "lilia@gmail.com",
+    password: "123455"
+};
 
-for (const char of word) {
-    arr.push(char);
-
+for (let key in obj) {
+    if (key.length % 2 === 0) {
+        console.log(key);
+    }
 }
-
-console.log(arr);
