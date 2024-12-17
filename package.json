@@ -1,0 +1,22 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "ts-node src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YastrebkovaLV/JavaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YastrebkovaLV/JavaScript/issues"
+  },
+  "homepage": "https://github.com/YastrebkovaLV/JavaScript#readme",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "description": ""
+}
