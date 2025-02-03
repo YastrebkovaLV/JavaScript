@@ -1,18 +1,18 @@
 {
   "name": "src",
   "version": "1.0.0",
-  "main": "src/main.ts",
+  "main": "src/Task.ts",
   "scripts": {},
   "prettier": {
     "singleQuote": true,
     "trailingComma": "all",
     "printWidth": 120,
     "tabWidth": 2,
-    "endOfLine": "lf"
+    "endOfLine": "lf",
+    "start": "ts-node src/Task.ts"
   },
 
-    "start": "ts-node src/main.ts"
-  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YastrebkovaLV/JavaScript.git"
