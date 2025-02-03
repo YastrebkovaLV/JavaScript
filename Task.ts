@@ -1,5 +1,5 @@
-type Status = "success" | "failure";
+type Levels = 1 | 2 | 3 | 4 | 5;
 
-const st: Status = "success";
+const st: Levels = 3 ;
 
 console.log(`Статус: ${st}`);
