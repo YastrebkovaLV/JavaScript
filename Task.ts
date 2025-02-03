@@ -1,16 +1,18 @@
-type InfoType = number[] | { id: number } | string[] | {} | null;
+import {blue, green, red} from 'chalk';
 
-type A = {
-  age: number | string;
-  nick: string;
-  info: InfoType;
-  photo?: string | null;
-};
+const aaa = 15;
+
+const result = [];
+
+const color = [red,green, blue];
+
+for (let i = 0; i < aaa; i++)
+{
+
+  const color2 = color[i % 3];
+  result.push(color2('*'));
 
 
-const a1: A = {
-  age:10,
-  nick: 'nickk' ,
-  info: [1,100],
-  photo: 'string',
-};
+}
+
+console.log(result.join(' - '));
