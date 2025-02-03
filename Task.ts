@@ -1,5 +1,16 @@
-type Levels = 1 | 2 | 3 | 4 | 5;
+type Colors = 'red' | 'green' | 'blue' | 'yellow' | 'orange' | 'purple';
+type Size = 'small' | 'medium' | 'large';
 
-const st: Levels = 3 ;
+type a = {
+  color: Colors;
+  size: Size;
 
-console.log(`Статус: ${st}`);
+};
+
+let product: a = {
+  color: 'red',
+  size: 'small',
+
+}
+
+console.log(product);
