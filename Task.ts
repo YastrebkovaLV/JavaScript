@@ -1,16 +1,12 @@
-type Colors = 'red' | 'green' | 'blue' | 'yellow' | 'orange' | 'purple';
-type Size = 'small' | 'medium' | 'large';
-
-type a = {
-  color: Colors;
-  size: Size;
-
+type Obj = {
+  createdAt: Date;
+  createdAtISO: string;
 };
 
-let product: a = {
-  color: 'red',
-  size: 'small',
-
+const myObj: Obj = {
+  createdAt: new Date(),
+  createdAtISO: new Date().toISOString(),
 }
 
-console.log(product);
+console.log(myObj);
+
